@@ -8,7 +8,7 @@ npm create skeleton-app@latest basic-auth-web
 cd basic-auth-web						
 ```
 
-## Development.
+## Development...
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
