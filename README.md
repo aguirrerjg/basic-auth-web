@@ -1,4 +1,4 @@
-# Sveltekit Project (SkeletonUI - Lucia 2.0 - Drizzle ORM -Skeleton UI)
+# Create Sveltekit Project (SkeletonUI - Lucia 2.0 - Drizzle ORM -Skeleton UI)
 
 ## Creating a project
 ```bash
