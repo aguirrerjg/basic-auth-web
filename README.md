@@ -2,7 +2,7 @@
 
 ## Creating a project
 ```bash
-# create a new project in the current directory
+# Create a new project in the current directory
 npm create skeleton-app@latest basic-auth-web
 #	- Enable SvelteKit's Typescript syntax (recommended)
 cd basic-auth-web						
