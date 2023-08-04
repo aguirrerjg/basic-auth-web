@@ -107,6 +107,5 @@
 		"track",
 		"width",
 		"zIndex"
-	],
-	"editor.acceptSuggestionOnEnter": "on"
+	]
 }
