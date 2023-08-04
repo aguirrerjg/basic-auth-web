@@ -1,20 +1,14 @@
-# create-svelte
-
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Create Sveltekit Project (SkeletonUI - Lucia 2.0 - Drizzle ORM -Skeleton UI)
 
 ## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+# Create a new project in the current directory
+npm create skeleton-app@latest basic-auth-web
+#	- Enable SvelteKit's Typescript syntax (recommended)
+cd basic-auth-web						
 ```
 
-## Developing
+## Development.......
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
