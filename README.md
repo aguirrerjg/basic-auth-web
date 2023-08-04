@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-# create-svelte
+# create-sveltekit
 =======
 # Sveltekit
 >>>>>>> 309a760 (Cambiando titulo 1)
