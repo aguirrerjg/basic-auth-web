@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# create-sveltekit
-=======
-# Sveltekit
->>>>>>> 309a760 (Cambiando titulo 1)
-=======
-# Sveltekivv
->>>>>>> a85004a (xxdd)
+# Sveltekit + Drizzle ORM + Lucia + Supabase
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
