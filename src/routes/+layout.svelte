@@ -35,6 +35,7 @@
 			<svelte:fragment slot="trail">
 				<a class="btn btn-sm" href="/">Home</a>
 				<a class="btn btn-sm" href="/register">Register</a>
+				<a class="btn btn-sm" href="/login">Login</a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
