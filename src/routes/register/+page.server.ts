@@ -32,12 +32,15 @@ export const actions: Actions = {
     return setError(form, "passwordConfirm", "Passwords do not match");
   }
 
+  const verificationTime = new Date().toISOString();
+
   const { error: authError } = await event.locals.supabase.auth.signUp({
     email: form.data.email,
     password: form.data.password,
     options: {
       data: {
         full_name: form.data.full_name ?? "",
+        confirmation_sent_at: Date.now(),
       },
     },
     email_confirm: true,
