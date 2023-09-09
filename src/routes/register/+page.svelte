@@ -17,13 +17,13 @@
   </div>
 
   <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-    <div class="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
+    <div class="bg-blue py-8 px-6 shadow rounded-lg sm:px-10">
       
       <form class="mb-0 space-y-6" action="#" method="POST" use:enhance>
 				<div>
-          <label for="full_name" class="block text-sm font-medium text-gray-700">Name</label>
+          <label for="full_name" class="block text-black text-sm font-medium">Name</label>
           <div class="mt-1">
-            <input type="text" name="full_name" bind:value={$form.full_name} />
+            <input type="text" name="full_name" class="text-black" bind:value={$form.full_name} />
           {#if $errors.full_name}
             <span class="block text-red-600 dark:text-red-500">{$errors.full_name}</span>
           {/if}
@@ -53,7 +53,7 @@
 				<div>
           <label for="passwordConfirm" class="block text-sm font-medium text-gray-700">Confirm Password</label>
           <div class="mt-1">
-            <input type="password" name="passwordConfirm" bind:value={$form.passwordConfirm} />
+            <input type="password" name="passwordConfirm" class="text-black" bind:value={$form.passwordConfirm} />
           {#if $errors.passwordConfirm}
             <span class="block text-red-600 dark:text-red-500">{$errors.passwordConfirm}</span>
           {/if}

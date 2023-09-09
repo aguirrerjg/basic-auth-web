@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { setError, superValidate } from "sveltekit-superforms/server";
 import type { Actions, PageServerLoad } from './$types';
-import { fail } from "@sveltejs/kit";
+import { fail, redirect } from "@sveltejs/kit";
 
 const registerUserSchema = z.object({
     full_name: z.string().max(140, "Name must be 140 characters or less").nullish(),
@@ -17,6 +17,11 @@ const registerUserSchema = z.object({
   });
 
 export const load: PageServerLoad = async (event) => {
+   //Validamos session para denegar el acceso en caso que no sea nulo
+  const session = await event.locals.getSession();
+  if (session) {
+    throw redirect(302, "/");
+  }  
     return {
       form: superValidate(registerUserSchema)
     };

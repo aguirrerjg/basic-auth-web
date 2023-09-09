@@ -11,6 +11,12 @@ const loginUserSchema = z.object({
 });
 
 export const load: PageServerLoad = async (event) => {
+  //Validamos session para denegar el acceso en caso que no sea nulo
+  const session = await event.locals.getSession();
+  if (session) {
+    throw redirect(302, "/account");
+  }
+
   return {
     form: superValidate(loginUserSchema),
   };
@@ -40,6 +46,6 @@ export const actions: Actions = {
       }
     }
 
-    throw redirect(302, "/");
+    throw redirect(302, "/account");
   },
 };

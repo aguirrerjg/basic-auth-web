@@ -15,9 +15,9 @@
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">  
         <form class="mb-0 space-y-6" action="#" method="POST" use:enhance>  
           <div>
-            <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+            <label for="email" class="block text-sm font-medium text-black">Email address</label>
             <div class="mt-1">
-              <input type="email" name="email" bind:value={$form.email} />
+              <input type="email" name="email" class="text-black" bind:value={$form.email} />
             {#if $errors.email}
               <span class="block text-red-600 dark:text-red-500">{$errors.email}</span>
             {/if}
@@ -25,9 +25,9 @@
           </div>
   
           <div>
-            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+            <label for="password" class="block text-sm font-medium text-black">Password</label>
             <div class="mt-1">
-              <input type="password" name="password" bind:value={$form.password} />
+              <input type="password" name="password" class="text-black" bind:value={$form.password} />
             {#if $errors.password}
               <span class="block text-red-600 dark:text-red-500">{$errors.password}</span>
             {/if}
